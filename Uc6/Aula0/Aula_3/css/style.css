@@ -1,0 +1,18 @@
+
+.cabeçalho{
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+}
+.cabeçalhocenter{
+    padding: 0px 0px 0px 290px;
+    align-self: center;
+    font-size: 40px;
+}
+.links{
+    padding: 0px 0px 200px 350px;
+    margin: 0px;
+}
+.rodape{
+    padding: 100px 50px 0px 0px;
+}

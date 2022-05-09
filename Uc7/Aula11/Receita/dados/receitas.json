@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"dataCadastro": "2022-03-30T19:47:27.520Z",
+		"dataAtualizacao": "2022-03-30T19:47:27.520Z",
+		"nome": "Limão",
+		"tempo": "50 minutos",
+		"porcoes": "4 porções",
+		"ingredientes": "Limão, açúcar, farinha, leite, fermento",
+		"preparo": "Adicione os ingredientes e depois de fazer o bolo adicione raspas do limão"
+	},
+	{
+		"id": 2,
+		"dataCadastro": "2022-03-30T19:49:32.434Z",
+		"dataAtualizacao": "2022-03-30T19:49:32.434Z",
+		"nome": "Chocolate",
+		"tempo": "35 minutos",
+		"porcoes": "7 porções",
+		"ingredientes": "Chocolate, açúcar, farinha, leite, fermento",
+		"preparo": "Adicione os ingredientes e depois de fazer o bolo adicione raspas de chocolate junto a pedaços cortados"
+	}
+]

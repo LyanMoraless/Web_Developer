@@ -1,0 +1,27 @@
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+.form{
+    margin-top: 30px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.result{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.title2{
+    padding-top: 30px;
+    color: blue;
+}
+.title3{
+    padding-top: 30px;
+    color: blue;
+}

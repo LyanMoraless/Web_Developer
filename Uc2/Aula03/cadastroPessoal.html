@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cadatro</title>
+
+  <link rel="stylesheet" href="../Aula_1/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body style="margin: 120px;">
+
+  <div class="container-fluid">
+    <header class="d-flex flex-column fixed-top">
+      <div class="row">
+        <div class="col-3 d-flex flex-column">
+          <div style="padding: 25px 0px 0px 0px;">
+            <div class="align-self-start"><img src="img/transferir.png" height="50" width="50"></div>
+          </div>
+        </div>
+        <div class="col-8 d-flex flex-column">
+          <div class="align-self-center a1">FindFootball</div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="align-self-end cadastros">
+            <a href="cadastroGeral.html" target="_blanck">Cadastre-se no nosso sistema</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="cadastroPessoal.html" target="_blanck">Trabalhe conosco</a> &nbsp;&nbsp;&nbsp;
+            <a href="https://www.centauro.com.br/" target="_blanck">Compre agora</a> &nbsp;&nbsp;&nbsp;
+          </div>
+          <!-- -------------------------------------------------------------- -->
+        </div>
+        <div class="col-1 d-flex flex-column">
+          <div class="align-self-end">Login</div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <form>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nome2">Nome</label>
+        <input type="email" class="form-control" id="nome2">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="sobNome">Sobrenome</label>
+        <input type="password" class="form-control" id="sobNome">
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+        <label for="email2">E-mail</label>
+        <input type="password" class="form-control" id="email2">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="numero2">Telefone</label>
+        <input type="tel" class="form-control" id="numero2" placeholder="(14) 91111-1111">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="cep">Cep</label>
+        <input type="text" class="form-control" id="cep" placeholder="11.111-111.">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="endereço2">Endereço</label>
+        <input type="text" class="form-control" id="endereço2" placeholder="Rua Oliveira campos - 41">
+      </div>
+
+      <div class="form-group col-md-2">
+        <label for="complemento">Complemento</label>
+        <input type="text" class="form-control" id="complemento" placeholder="Quadra, referência">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cidade2">Cidade</label>
+        <input type="text" class="form-control" id="cidade2">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="estado2">Estado</label>
+        <select id="estado2" class="form-control">
+          <option selected>São Paulo</option>
+          <option>Amazonas (AM)</option>
+          <option>Bahia (BH)</option>
+          <option>Distrito Federal (DF)</option>
+          <option>Espirito Santo (ES)</option>
+          <option>Goiás (GO)</option>
+          <option>Mato Grosso (MT)</option>
+          <option>Minas Gerais (MG)</option>
+          <option>Pará (PA)</option>
+          <option>Rio de Janeiro (RJ)</option>
+          <option>Rio Grande do Sul (RS)</option>
+          <option>Santa Catarina (SC)</option>
+          <option>Outros...</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-2">
+        <label for="pais">País</label>
+        <select type="text" class="form-control" id="pais">
+          <option selected>Brasil</option>
+          <option>Estados Unidos</option>
+          <option>Rússia</option>
+          <option>China</option>
+          <option>Alemanha</option>
+          <option>Reino Unido</option>
+          <option>França</option>
+          <option>Japão</option>
+          <option>Israel</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="ddNasc">Data de Nascimento</label>
+        <input type="text" class="form-control" id="ddNasc" placeholder="Dia/Mês/Ano">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" id="cpf" placeholder="111.111.111-11">
+      </div>
+    </div>
+
+    <div class="form-group col-md">
+      <input class="form-check-input" type="checkbox" id="sexo">Masculino
+      <label class="form-check-label" for="sexo"></label>
+      <input class="form-chech-input" type="checkbox" id="sexo2">Feminino
+      <label class="form-check-label" for="sexo2"></label>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-outline-success btn-lg">Enviar</button>
+
+    <footer class="fixed-bottom">
+      <div class="row">
+        <!--Primeira coluna-->
+        <div class="col-3 rodape">
+          <a href="@@@@@@@">Quem somos</a>
+        </div>
+        <!--Segunda coluna-->
+        <div class="col-7 contato">Telefone para contato
+          <div class="numero">
+            <a href="@@@@@">99999-9999</a>
+          </div>
+        </div>
+        <!--Terceira coluna-->
+        <div class="col-2 flex-column d-flex">
+
+          <a href="https://www.instagram.com/?hl=pt-br">Instagram</a>
+          <a href="https://pt-br.facebook.com/">Facebook</a>
+          <a href="https://www.whatsapp.com/?lang=pt_br">WhatsApp </a>
+
+          <!-- <a href="https://www.instagram.com/?hl=pt-br" target="_blank"> -->
+          <!-- <img src="img/insta.png" height="40px" width="40px"> -->
+          <!-- </a> -->
+          <!-- <a href="https://pt-br.facebook.com/" target="_blank"> -->
+          <!-- <img src="img/face.jpg" height="32px" width="60px"> -->
+          <!-- </a> -->
+          <!-- <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"> -->
+          <!-- <img src="img/whats.png" height="40px" width="40px"> -->
+          <!-- </a> -->
+        </div>
+
+      </div>
+
+      <script type="text/javascript" src="../Aula_1/public/js/jquery.js"></script>
+      <script type="text/javascript" src="../Aula_1/public/js/bootstrap.min.js"></script>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/book.jpg);
+}
+
+.central{
+    margin-top: 50px;
+}
+.form {
+    background-color: white;
+    height: 650px;
+    
+    
+}
+.marginform{
+    margin: 30px;
+}
+.font {
+    font-size: 40px;
+}
+.font2 {
+    font-size: 27px;
+    margin-top: 50px;
+}

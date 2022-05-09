@@ -1,0 +1,30 @@
+	-> Configurações
+
+		I) Criar pasta para o projeto
+		II) Abrir o terminal na pasta do projeto
+		III) Inicializar a app do node: npm init -y
+			IV) Instalar dependências: npm install express body-parser fs path --save
+			V) Instalar o nodemon: npm install nodemon --save-dev
+
+	-> Servidor
+
+		VI) Criar pasta src -> código fonte do projeto
+		VII) Criar o arquivo src/server.js
+		VIII) Criar o script start no package.json: node src/server.js
+			IX) Criar o script dev no package.json: nodemon src/server.js
+			X) Rodar o servidor: npm run dev
+
+	-> Rotas
+
+		XI) Criar o arquivo do módulo da rota: src/rotas/usuarioRotas.js
+		XII) Importar o express
+		XIII) Criar a constante router: const router = express.Router()
+			IVX) Declarar as rotas
+			XV) Exportar as rotas no módulo: module.exports = router
+			XVI) Importar no arquivo server.js: const usuarios = require('./rotas/usuarioRotas')
+				XVII) app.use('/usuarios', usuarios)
+				XVIII) Testar as rotas com o Insomnia
+
+
+
+

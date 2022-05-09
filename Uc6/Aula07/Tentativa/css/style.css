@@ -1,0 +1,20 @@
+.letras{
+    color: blue;
+}
+body{
+    background-image: url(../img/money.jpg);
+    background-size: cover;
+}
+.form{
+    background-color: white;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 150px;
+    /* backdrop-filter: brightness(5px); */
+}
+.inicio{
+    margin-top: 40px;
+}
+.result{
+    margin-left: 35px;
+}

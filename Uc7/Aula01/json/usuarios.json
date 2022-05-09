@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nome": "Lyan",
+        "sobrenome": "Gabriel",
+        "email": "drlyanmorales@gmail.com",
+        "senha": "12332145678990pedrin54322"
+    },
+    {
+        "id": 2,
+        "nome": "Ruiz",
+        "sobrenome": "Morales",
+        "email": "revruizmorales@gmail.com",
+        "senha": "12332145678990lukin54322"
+    },
+    null,
+    {
+        "id": 1,
+        "nome": "Maria",
+        "sobrenome": "Josifalcra",
+        "email": "Mariajosifalcra@gmail.com",
+        "senha": "umdoistres"
+    }
+]

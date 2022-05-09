@@ -1,0 +1,79 @@
+header{
+    background-color:darkgrey;
+    height: 100px;
+}
+
+footer{
+    background-color: darkgrey;
+    height: 80px;
+}
+
+
+.cor1{
+    background-color: blue;
+}
+.cor2{
+    background-color: red;
+}
+.cor3{
+    background-color: #008100;
+}
+.cor4{
+    background-color: indigo;
+}
+.cor5{
+    background-color: lightblue;
+}
+.cor6{
+    background-color: mediumspringgreen;
+}
+.cor7{
+    background-color: midnightblue;
+}
+.cor8{
+    background-color: orchid;
+}
+.cor9{
+    background-color: peru;   
+}
+.cor10{
+    background-color: saddlebrown;
+}
+
+.a1{
+    padding: 30px 250px 0px 0px;
+    font-size: 20px;
+}
+.rodape{
+    padding: 25px 0px 0px 25px;
+
+}
+.contato{
+    padding: 25px 0px 0px 0px;
+    text-align: center;
+}
+.numero{
+    padding: 0px 0px 0px 35px;
+}
+.cadastros{
+    padding: 15px 0px 0px 0px;
+}
+
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url('');
+    width: 1200px;
+    height: 800px;
+  
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+  }

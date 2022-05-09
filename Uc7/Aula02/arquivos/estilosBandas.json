@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nome": "Metal"
+    },
+    {
+        "id": 2,
+        "nome": "HardRock"
+    },
+    {
+        "id": 3,
+        "nome": "Gospel"
+    },
+    {
+        "id": 4,
+        "nome": "Eletronica"
+    },
+    {
+        "id": 5,
+        "nome": "Sertanejo"
+    }
+]

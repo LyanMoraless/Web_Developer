@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-top: 105px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: auto;
+    padding: 105px 0px 0px 0px;
+}
+
+.centrotexto {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 7px 0px 0px 0px;
+}
+
+.textcolor {
+    color: black !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.barratop {
+    background-color: #C2B375;
+}
+
+.barrabotton {
+    background-color: #C2B375;
+    height: 50px;
+}
