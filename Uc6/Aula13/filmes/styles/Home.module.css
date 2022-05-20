@@ -1,42 +1,5 @@
-.header{
-    background-image: url(../public/palmeiras-logo-4.png);
-    height: 120px;
-    color: white;
-
-}
-.cards{
+.container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 20px;
-}
-.containerCenter{
-    margin-left: 500px;
-    margin-right: 500px;
-
-}
-.title{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* font-weight: bolder; */
-    font-style: italic;
-}
-.tilteCard{
-    font-size: 30px;
-    margin: 20px;
-    text-align: center;
-
-}
-.colzinha{
-    margin-top: 30px;
-    font-size: 30px;
-    font-weight: bolder;
-    font-style: italic;
-}
-.colzinha2{
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
 }

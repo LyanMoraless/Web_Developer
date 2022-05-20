@@ -1,123 +1,59 @@
 import { useState, useEffect } from 'react';
-
 import styles from '../../styles/Home.module.css';
 import api from '../services/api';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Card, ListGroup, ListGroupItem, Row, Col, Container } from 'react-bootstrap'
-
-
-//SE O EXPORT FOSSE: EXPORT API; O IMPORT SERIA DENTRO CHAVES
-//(index.js) import { api } from '../services/api'
-//(api.js) export const api = axios.create;
+import { Card, Button, ListGroup, ListGroupItem, Row, Col, Container } from 'react-bootstrap'
 
 export default function Home() {
 
-  const [filmes, setFilmes] = useState([]);
+  const [marvelDates, setMarvelDates] = useState([])
 
   useEffect(() => {
-
-    async function loadFilms() {
-      const response = await api.get('/movie/now_playing', {
+    async function loadDates() {
+      const respost = await api.get('/v1/public/comics', {
         params: {
-          api_key: 'bb62304363ff9a750abe29af399bb50b'
+          ts: 1,
+          apikey: 'd61389e246bbe014547549a3adce2ea8',
+          hash: '46c56a3ef7455b4d6731e00b64811e38'
         }
       })
 
-      setFilmes(response.data.results)
+      setMarvelDates(respost.data.data.results)
+      console.log(respost)
 
     }
-    loadFilms()
 
+    loadDates()
 
-  }, [])
+  }, []);
 
   return (
+    <div className={styles.container}>
+      <h1>Marvel Comics</h1>
+      {marvelDates.map((dados) => {
+        return (
+          <div key={dados.id}>
+            <Container>
+              <Row>
+                <Col></Col>
+                <Col>
+                  <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={`${dados.thumbnail.path}/standard_fantastic.${dados.thumbnail.extension}`} />
+                    <Card.Body>
+                      <Card.Title>{dados.title}</Card.Title>
+                      <Card.Text>Identador: {dados.id}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col></Col>
+              </Row>
+            </Container>
+          </div>
 
-    <div>
-
-      <header className={styles.header}>
-        <Container>
-          <Row>
-            <Col className={styles.colzinha}>
-              Films API
-            </Col>
-
-            <Col></Col>
-            <Col></Col>
-            <Col></Col>
-
-            <Col className={styles.colzinha2}>
-              <a href=''>Now Playing</a>
-            </Col>
-            <Col className={styles.colzinha2}>
-              Most Acess
-            </Col>
-            <Col className={styles.colzinha2}>
-              Better Films
-            </Col>
-          </Row>
-        </Container>
-      </header>
-
-      <div className={styles.title}>
-        <h1>Now Playing</h1>
-        <hr></hr>
-      </div>
-
-      <div className={styles.containerCenter}>
+        )
 
 
-        {filmes.map((filme) => {
-
-          return (
-
-
-
-            <div key={filme.id}>
-              <div className={styles.cards}>
-
-                <Card>
-                  <Card.Title>
-                    <div className={styles.tilteCard}>
-                      {filme.title}
-                    </div>
-                  </Card.Title>
-
-                  <Card.Img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} />
-
-                  <Card.Body>
-
-                    <Card.Text>{filme.overview}</Card.Text>
-
-                    <ListGroup className="list-group-flush">
-
-                      <ListGroupItem>Popularidade {filme.popularity}</ListGroupItem>
-                      <ListGroupItem>Lançamento {filme.release_date}</ListGroupItem>
-                      <ListGroupItem>Avaliação {filme.vote_average}</ListGroupItem>
-
-                    </ListGroup>
-
-                  </Card.Body>
-
-                </Card>
-
-              </div>
-
-            </div>
-
-
-
-
-
-
-
-          )
-        })}
-
-      </div>
+      })}
     </div>
   )
-
-
 }
