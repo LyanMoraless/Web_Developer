@@ -35,10 +35,23 @@
     font-size: large;
     font-style: italic;
 }
+
+
+
 .title2{
     margin-bottom: 10px;
     font-style: italic;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.y{
+    box-shadow: 7px 7px 13px 0px rgba(49, 46, 46, 0.22);
 }
 .x{
     display: flex;
@@ -47,8 +60,7 @@
     color: white;
     font-size: 30px;
 }
-
-.form{
+.btn{
     display: flex;
     justify-content: center;
 }

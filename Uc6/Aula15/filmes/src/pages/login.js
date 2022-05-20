@@ -18,13 +18,11 @@ export default function Login() {
     }
 
     return (
-        <div>
-            
-            
+        <div className={styles.y}>
             <h1 className={styles.title2}>Login</h1>
 
-            <div>
-                <form className={styles.form} onSubmit={submitForm}>
+            <div className={styles.container2}>
+                <form onSubmit={submitForm}>
                     
                     {/* e = event (está armazenando o efeito de mudança) */}
 
@@ -34,13 +32,17 @@ export default function Login() {
                     placeholder='Informe seu email'>
                     </input>
 
+                    <br></br>
+
                     <input value={password}
                     onChange={ (e) => setPassword(e.target.value)} 
                     type='password' 
                     placeholder='Insira sua senha'>
                     </input>
 
-                    <button>Submit</button>
+                    <br></br>
+
+                    <button className={styles.btn} type='submit'>Submit</button>
 
                 </form>
             </div>
