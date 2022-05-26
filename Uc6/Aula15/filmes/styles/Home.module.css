@@ -49,9 +49,12 @@
 .container2{
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 100%;
 }
 .y{
     box-shadow: 7px 7px 13px 0px rgba(49, 46, 46, 0.22);
+
 }
 .x{
     display: flex;
