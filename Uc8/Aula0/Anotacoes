@@ -1,0 +1,5 @@
+mysql -u;
+show databases;
+use (nome da database)
+show tables;
+desc (nome da tabela);
