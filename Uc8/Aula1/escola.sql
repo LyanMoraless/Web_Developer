@@ -4,6 +4,8 @@
 
 use mysql
 
+set character_set_client = 'utf8';
+
 -- Apagar e criar o DB escola
 
 drop database if exists escola;
@@ -88,9 +90,24 @@ insert into areas(id, nome) values
 
 insert into cursos(nome, area_id) values 
 ('Técnico em Informática', 3),
+('Técnico em Informática para internet', 3),
 ('Técnico em Administração', 2),
 ('Técnico em Enfermagem', 1),
 ('Técnico em Bombeiro Civil', 1),
 ('Técnico em Farmácia', 1);
+
+insert into turmas(id, inicio, curso_id) values
+(1, '2022/06/01 19:00', 3),
+(2, '2022/06/01 13:30', 4);
+
+insert into alunos(id, nome, telefone, email, rg, cpf) values
+(1, 'Lyan Morales', '(14) 996982353', 'drlyanmorales@gmail.com', '12 345 678-9', '123.456.789.01'),
+(2, 'Ana Carolina Luiz dos Santos', '(14)991844360', 'anacarolinaluiz486@gmail.com', '457660090', '38429257861'),
+(3, 'Victor Augusto de Almeida Silva', '996771741', 'victoraugustoas41@gmail.com', '12.345.678.10', '321.321.321.321');
+
+insert into enderecos(id, aluno_id, logradouro, numero, complemento, bairro, cep, cidade, estado) values
+(1, 1, 'Rua Machado de Assis', '46', 'Quadra 3', 'Estoril I', '17.014.040', 'Bauru', 'Sp'),
+(2, 2, 'Rua Francisco do Rego Carranca', '4-90', null, 'Jd Vânia Maria', '17063-4900', 'Bauru', 'Sp'),
+(3, 3, 'Rua Major fonseca osorio','543', null, 'Antartica', '17013-140', 'Bauru', 'Sp');
 
 -- As tabelas que tem chaves estrangeiras e necessitam de outra tabela devem ser criadas após a tabela pai que possui a chave primaria
