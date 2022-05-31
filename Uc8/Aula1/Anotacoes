@@ -1,5 +1,14 @@
-mysql -u;
+mysql -u root
 show databases;
 use (nome da database)
 show tables;
 desc (nome da tabela);
+source (caminho do arquivo)
+select * from (nome da tabela);
+select (coluna da tabela) from (nome da tabela);
+update (nome da tabela) set (coluna da tabela); PARA APENAS UMA COLUNA 
+update (nome da tabela) set (coluna da tabela) where (propriedade comum entre todas que serão alterados); PARA TODOS QUE SE ENCAIXAREM NO WHERE *CUIDADO
+
+-- Select
+-- Update
+-- Delete
