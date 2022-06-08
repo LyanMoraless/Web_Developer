@@ -1,2 +1,2 @@
-require("./cursos");
-//require("./areas");
+require("./areas");
+//require("./cursos");
