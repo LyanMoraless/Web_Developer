@@ -2,16 +2,32 @@ const prompt = require('prompt-sync')();
 
 function principal() {
 
-    console.log("Selecione o que deseja analisar") 
-    let opt = prompt("Cursos 1 Areas 2: ")
+    console.log("#".padEnd(80, "#"));
+    console.log();
 
-        if(opt == "1") {
+    let name = prompt("Digite seu nome: ");
+
+    console.log();
+
+    console.log(`Seja bem vindo, ${name}!`);
+
+    let opt2 = prompt(`${name}, deseja realizar alterações? (s/n)`);
+    do {
+
+        let opt = prompt("Cursos 1 Areas 2: ");
+
+        if (opt == "1") {
             cursos();
         }
-        else if(opt == "2") {
+        else if (opt == "2") {
             areas();
         }
-    }
+        else {
+            console.log("Alteração não identificada...")
+        }
+    } while (opt2 == "s" || opt2 == "S");
+
+}
 
 function cursos() {
     console.log("- CURSOS ".padEnd(80, "-"));

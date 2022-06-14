@@ -1,0 +1,62 @@
+1. Mostre todos os cursos da área 1
+2. Selecione todos cursos onde:
+   1. os nomes iniciam a letra 'A'
+   2. o nome contenha a palavra informática
+   3. O preço é maior do que 100 
+3. Mostre todos os alunos onde:
+   1. Nome inicia com Felipe
+   2. Nome termina com Trentin
+   3. Nome contenha a palavra Luiz
+   4. E-mail seja do outlook
+4. Mostre todos os alunos e seus endereços
+5. Mostre todos os cursos e suas áreas
+6. Mostre todas as turmas com o nome do seu curso
+7. Mostre todas as turmas com o nome do curso e da área
+8. Mostre quais são os alunos matriculados na turma do técnico em informática
+9. Mostre quais são os alunos cursando a área de Saúde
+10. Mostre em que turma, curso e área cada aluno está matriculado
+
+SELECT * FROM areas;
+
+SELECT * FROM areas WHERE nome like 'A%';
+SELECT * FROM areas WHERE nome like 'Sa_de';
+SELECT * FROM cursos where preco > 100;
+select * from areas, cursos where cursos.area_id = areas.id;  
+select * from areas, cursos;
+select * from areas, cursos where cursos.area_id = areas.id;
+select * from areas inner join cursos on (cursos.area_id = areas.id);
+select * from areas left join cursos on (cursos.area_id = areas.id); 
+select cursos.id from areas inner join cursos on (cursos.area_id = areas.id);
+select areas.id from areas inner join cursos on (cursos.area_id = areas.id);
+select cursos.id, cursos.nome, areas.id, areas.nome from areas inner join cursos on (cursos.area_id = areas.id);
+@@ -33,4 +35,29 @@
+
+select cursos.id as 'Código', cursos.nome as 'Curso', areas.nome as 'Área', cursos.preco as 'Preço'  from areas inner join cursos on (cursos.area_id = areas.id) where cursos.preco > 100;
+
+select cursos.id as 'Código', cursos.nome as 'Curso', areas.nome as 'Área', cursos.preco as 'Preço'  from areas inner join cursos on (cursos.area_id = areas.id) where cursos.preco < 300; 
+select cursos.id as 'Código', cursos.nome as 'Curso', areas.nome as 'Área', cursos.preco as 'Preço'  from areas inner join cursos on (cursos.area_id = areas.id) where cursos.preco < 300;
+
+
+/* FUNÇÕES DE AGREGAÇÃO */
+
+select count(*) as qtde from alunos;
+
+select count(*), max(preco), min(preco), avg(preco), sum(preco) from cursos;
+
+
+select areas.nome, count(*),max(preco), min(preco), avg(preco) 
+from areas 
+  inner join cursos on (areas.id = cursos.area_id) 
+group by areas.nome;
+
+select areas.nome, count(cursos.id),max(preco), min(preco), avg(preco) 
+from areas 
+  left join cursos on (areas.id = cursos.area_id) 
+group by areas.nome;
+
+
+select areas.nome, count(*), max(preco), min(preco), avg(preco) 
+from areas 
+  inner join cursos on (areas.id = cursos.area_id) 
+group by areas.nome
+having avg(preco) > 200;
