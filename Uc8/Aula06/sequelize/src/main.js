@@ -1,5 +1,5 @@
 //RODAR: NODE MAIN.JS
-const { sequelize, Area, Aluno, Turma, Curso } = require('./models');
+const { sequelize, Area, Aluno, Turma, Curso, Endereco } = require('./models');
 const colors = require('colors');
 
 (async () => {
@@ -15,7 +15,15 @@ const colors = require('colors');
         {
             nome: 'Lyan Gabriel Ruiz Morales',
             email: 'drlyanmorales@gmail.com',
-            senha: '123454321'
+            senha: '123454321',
+            Endereco: {
+                logradouro: 'Rua teste',
+                numero: '123',
+                bairro: 'Centro',
+                cep: '12345-678',
+                cidade: 'Bauru',
+                estado: 'Sp'
+            }
         },
         {
             nome: 'Elocin Ogramac',
@@ -27,7 +35,10 @@ const colors = require('colors');
             email: 'ALUNOTESTE@gmail.com',
             senha: 'TESTEALUNO'
         }
-    ]);
+    ],
+    {
+        include: [Endereco]
+    });
 
     await Curso.bulkCreate([
         {

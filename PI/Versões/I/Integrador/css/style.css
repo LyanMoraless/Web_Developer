@@ -1,0 +1,32 @@
+p {
+    color: #FF0000;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pb {
+    color: royalblue;
+}
+
+#pg {
+    color: seagreen;
+}
+
+/*O pr identifica uma diferenciação dentro do parágrafo, identificado pela tag id="pr"*/
+
+/*Nessas subdivisões também pode ser usado o font-size e o font-family
+        font-size: tamanho da letra
+        font-family: fonte da letra*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Essas são as propriedades de alinhamento*/
+
+#div_header{
+    background-color: seagreen;
+    text-align: center;
+    height: 45px;
+}
