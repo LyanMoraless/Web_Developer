@@ -1,0 +1,47 @@
+=====================================================================================================================================================================================================
+
+											NECESSIDADES PROJETO_SALAS
+
+=====================================================================================================================================================================================================
+
+	-> SOFTWARE
+
+		- Cronograma
+		- Briefing (escopo)
+		- WireFrame
+		- UML (casos de uso)
+		- MER (lógico)
+		- Rotas
+		  - URI (endereço/endpoint)
+		  - Requisição (req)
+		  - Resposta (res)
+ 
+	-> DEFINIÇÕES DO PROJETO
+
+		-> FASE 1
+			
+			- Definir qual é o projeto
+			- Escolher a melhor solução apresentada
+
+		-> FASE 2 
+
+			- Desenvolvimento geral
+			- Codificação 
+			- Realizar testes
+			- Documentação da API
+
+
+	-> ANALISE GERAL DO PROJETO 				
+								_
+							       /_\
+ 		|			|			|			|			|
+		|	1° semana	|       2° semana	|       3° semana	|	 4° semana	|
+		|-----------------------|-----------------------|-----------------------|-----------------------|
+		|			|			|			|			|
+		|			|			|			|			|
+
+			- Até a o final da segunda semana deve-se definir o projeto - término da FASE 1 (13/07)
+			- A partir da terceira semana começamos a segunda fase 
+			- Término da segunda fase (9/08)
+			- Apresentação do projeto finalizado (10/08)
+			

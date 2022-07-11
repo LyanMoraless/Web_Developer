@@ -1,0 +1,29 @@
+DADOS DO PROJETO
+
+- Lembrar das informações necessárias para segurança em geral (quantas cadeiras com e sem espaçamento + docente + dias que ocorrem + nome do 
+curso + estrutura para o notebook + estrutura convencional + especificidades dos laboratórios) -> sala de aula convencional + laboratório + sala
+com cadeira universitária + sala do bem-estar (macas) + ateliês de design + modelagem
+- Numero de cadeiras que as salas possuem (na hora do agendamento acontece muito das pessoas pedirem por número de cadeiras)
+
+	-> Requisições da sala
+		-> Em quais horários ela está disponivel
+		-> As salas ficam indisponíveis em algum período 		
+		-> Quais as razões ocasionariam em um bloqueio de sala 
+		-> Como os agendamentos são administrados 
+
+	-> Requisições do usuário 
+		-> O que procuram a realizar uma reserva 
+		-> Qual o limite de reservas 
+
+
+IDEIAS MAIS INTERATIVAS (TALVEZ UM CALENDÁRIO COM TODOS OS DIAS DO MÊS QUE ABRA O DIA E TENHA TODAS AS SALAS E SEUS AGENDAMENTOS)
+	-> ASSIM SEPARARIA POR DIA
+	-> QUANDO AS PESSOAS BUSCAM AS SALAS ELAS PEDEM O DIA 
+	-> COMO OS CURSOS SÃO PADRONIZADOS EM QUESITO DE HORÁRIO TALVEZ UM DIA DE UM CALENDÁRIO QUE ABRA OS PERÍODOS SEJA MAIS INTERESSANTE
+	EX: ABRE-SE O DIA 10/07 COM OS TRÊS PERÍODOS E DEPOIS DE SELECIONADO O PERÍODO ABRE-SE TODAS AS SALAS E SUAS DISPONIBILIDADES
+
+SEPARAR AS SALAS POR TIPOS, A PESSOA QUE VAI AGENDAR PEDE UMA SALA COM COMPUTADORES, ENTÃO É BACANA TER UMA SUBDVISÃO COM SALAS QUE POSSUEM 
+OS COMPUTADORES
+CAMPANHAS EM GERAL PODEM BLOQUEAR SALAS + MANUTENÇÃO DE EQUIPAMENTOS + LIMPEZA DAS SALAS (POSITIVADOS DA COVID) 
+ENQUANTO AS UNIDADES ESTIVEREM EM FUNCIONAMENTO AS SALAS PODEM SER AGENDADAS
+

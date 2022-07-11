@@ -1,0 +1,5 @@
+A ideia dessa aula é falar sobre o TDD
+    - Red
+    - Green
+    - Refactor
+    
